@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vendor.scrapy.vendorscrapy.root.FeedbackActivity"
+    tools:showIn="@layout/activity_feedback">
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you for using Scrap app services.\nWe hope you are receiving benefits from this.\n\nPlease let us know your kind feedback."
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/dimension20dp"
+        android:layout_marginTop="@dimen/dimension20dp"
+        android:layout_marginLeft="@dimen/dimension20dp"
+        android:layout_marginRight="@dimen/dimension20dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:hint="Add feedback here.."
+        android:maxLines="5"
+        android:lines="5"
+        android:gravity="start"
+        android:padding="@dimen/dimension20dp"
+        android:layout_margin="@dimen/dimension20dp"
+        android:layout_below="@+id/tvComment"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:progressTint="@color/colorPrimaryDark"
+        android:layout_below="@+id/edComment"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit feedback"
+        android:background="@color/colorPrimaryDark"
+        android:paddingLeft="@dimen/dimension10dp"
+        android:paddingRight="@dimen/dimension10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimension20dp"
+        />
+
+</RelativeLayout>

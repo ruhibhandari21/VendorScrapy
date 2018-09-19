@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvCardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:padding="@dimen/dimension5dp"
+        android:text="Confirm card values"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerRateCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relDetails"
+        android:layout_below="@+id/tvCardTitle"
+        android:padding="@dimen/dimension4dp" />
+
+    <RelativeLayout
+        android:id="@+id/relDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewDetails"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/dimension5dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Rakesh scrap buyer"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="@dimen/dimension5dp">
+
+            <TextView
+                android:id="@+id/tvApprox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Estimated price"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Rs 100"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension10dp"
+        android:layout_above="@+id/relAction"
+        android:background="@color/windowBackground" />
+
+    <RelativeLayout
+        android:id="@+id/relAction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite">
+
+        <Button
+            android:id="@+id/btPlaceOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="@dimen/dimension10dp"
+            android:paddingRight="@dimen/dimension10dp"
+            android:text="Place order"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Vendor Kart</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string-array name="city_name">
+        <item>Select city</item>
+        <item>Pune</item>
+    </string-array>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_vendor">VendorActivity</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_activity_rate_card">RateCardActivity</string>
+    <string name="title_activity_selection">SelectionActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="title_activity_rate">RateActivity</string>
+
+    <string name="SAVE">SAVE</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="RATE_CARD">RATE CARD</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_order_details">OrderDetailsActivity</string>
+
+    <string name="WARNING">Warning</string>
+    <string name="TRY">Try again</string>
+    <string name="service_not_available">Service not available</string>
+    <string name="invalid_lat_long_used">invalid lat long</string>
+    <string name="no_address_found">address not found</string>
+    <string name="address_found">address found</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

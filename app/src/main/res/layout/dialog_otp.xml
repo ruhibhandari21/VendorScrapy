@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginBottom="@dimen/dimension10dp"
+        android:layout_marginLeft="@dimen/dimension20dp"
+        android:layout_marginRight="@dimen/dimension10dp"
+        android:layout_marginTop="@dimen/dimension10dp"
+        android:gravity="center_vertical"
+        android:text="OTP Validation"
+        android:textColor="@color/colorGreen"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginBottom="@dimen/dimension10dp"
+        android:layout_marginLeft="@dimen/dimension20dp"
+        android:layout_marginRight="@dimen/dimension10dp"
+        android:layout_marginTop="@dimen/dimension10dp"
+        android:gravity="center_vertical"
+        android:text="9579795761"
+        android:textColor="@color/colorDarkestBlue"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="@dimen/dimension220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimension20dp"
+        android:layout_marginRight="@dimen/dimension20dp"
+        android:background="@color/colorPrimaryLight"
+        android:textColor="@color/colorWhite"
+        android:hint="OTP"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:imeOptions="actionDone"
+        android:textColorHint="@color/colorLightGray"
+        android:padding="@dimen/dimension4dp"
+        android:maxLength="5"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimension10dp"
+        android:layout_marginBottom="@dimen/dimension20dp"
+        android:layout_marginLeft="@dimen/dimension20dp"
+        android:layout_marginRight="@dimen/dimension20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialogOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="VALIDATE"
+            android:layout_marginLeft="@dimen/dimension20dp"
+            android:textColor="@color/colorOrange"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/dialogRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/dialogOk"
+            android:gravity="center"
+            android:text="RESEND"
+            android:textStyle="bold"
+            android:textColor="@color/colorOrange"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </RelativeLayout>
+
+</LinearLayout>

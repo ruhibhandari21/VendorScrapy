@@ -1,0 +1,287 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    card_view:cardCornerRadius="@dimen/dimension5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dimension5dp"
+    android:elevation="@dimen/dimension5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimension5dp"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Customer name"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office #, cerebrum it park, kalyani nagar, pune 411014"
+            android:ellipsize="end"
+            android:layout_below="@+id/tvName"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/colorPrimaryDark"
+            android:maxLines="2"
+            android:textStyle="italic"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/propertyLinear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension25dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_below="@+id/tvAddress"
+            android:layout_marginTop="@dimen/dimension2dp"
+            android:layout_marginBottom="@dimen/dimension2dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tvQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:id="@+id/tvQtyValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10Kg"
+                    android:textStyle="italic|bold"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dimension1dp"
+                android:layout_height="@dimen/dimension20dp"
+                android:layout_marginLeft="@dimen/dimension10dp"
+                android:layout_marginRight="@dimen/dimension10dp"
+                android:background="@color/colorDarkGray"
+                android:layout_gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:id="@+id/tvAmtValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$150"
+                    android:textStyle="italic|bold"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeLinear"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension25dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_below="@+id/propertyLinear"
+            android:layout_marginTop="@dimen/dimension2dp"
+            android:layout_marginBottom="@dimen/dimension4dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDateValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20th March 2018"
+                    android:textStyle="italic|bold"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dimension1dp"
+                android:layout_height="@dimen/dimension20dp"
+                android:layout_marginLeft="@dimen/dimension10dp"
+                android:layout_marginRight="@dimen/dimension10dp"
+                android:background="@color/colorDarkGray"
+                android:layout_gravity="center"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/tvSlot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slot"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSlotValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 p.m - 6 p.m"
+                    android:textStyle="italic|bold"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension2dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/timeLinear"
+            android:layout_marginTop="@dimen/dimension4dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relativeAction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension30dp"
+            android:visibility="visible"
+            android:layout_below="@+id/viewDivider"
+            android:layout_marginTop="@dimen/dimension4dp"
+            >
+
+            <Button
+                android:id="@+id/btInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkGray"
+                android:text="DETAILS"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:background="@color/colorTransparent"
+                android:paddingLeft="@dimen/dimension4dp"
+                android:paddingRight="@dimen/dimension4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+
+                />
+
+            <Button
+                android:id="@+id/btCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDarkGray"
+                android:text="CALL"
+                android:textStyle="bold"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:background="@color/colorTransparent"
+                android:paddingLeft="@dimen/dimension4dp"
+                android:paddingRight="@dimen/dimension4dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAP"
+                android:background="@color/colorTransparent"
+                android:textColor="@color/colorDarkGray"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/dimension10dp"
+                android:paddingRight="@dimen/dimension10dp"
+                android:layout_weight="0.6"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/dimension4dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

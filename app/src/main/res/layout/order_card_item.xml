@@ -1,0 +1,73 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    card_view:cardCornerRadius="@dimen/dimension5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/dimension5dp"
+    android:elevation="@dimen/dimension5dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimension5dp"
+        >
+
+        <TextView
+            android:id="@+id/tvItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Books"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold|italic"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/tvItemDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notebooks, book, paper etc"
+            android:ellipsize="end"
+            android:layout_below="@+id/tvItem"
+            android:textSize="@dimen/dimension14dp"
+            android:textColor="@color/colorlightgray"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemDetails"
+            >
+
+            <TextView
+                android:id="@+id/tvUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1kg - 20Rs"
+                android:textStyle="italic"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:id="@+id/tvUnitLimit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty: 10kg"
+                android:textStyle="italic"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

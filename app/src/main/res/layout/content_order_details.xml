@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vendor.scrapy.vendorscrapy.order.OrderDetailsActivity"
+    tools:showIn="@layout/activity_order_details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimension5dp"
+            android:layout_marginRight="@dimen/dimension5dp"
+            android:padding="@dimen/dimension10dp"
+            android:text="Customer details"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark"
+
+            />
+
+        <RelativeLayout
+            android:id="@+id/relFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="@dimen/dimension5dp"
+            android:layout_marginRight="@dimen/dimension5dp"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/dimension10dp">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nilesh jain"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:text="Keshav nagar, Pune"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAddress"
+                android:text="+91 9579795761"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension0.5dp"
+            android:layout_below="@+id/relFirst"
+            android:layout_marginBottom="@dimen/dimension10dp"
+            android:layout_marginTop="@dimen/dimension10dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewCustomer"
+            android:layout_marginLeft="@dimen/dimension5dp"
+            android:layout_marginRight="@dimen/dimension5dp"
+            android:padding="@dimen/dimension10dp"
+            android:text="Card details"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <RelativeLayout
+            android:id="@+id/relSec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle2"
+            android:layout_marginLeft="@dimen/dimension5dp"
+            android:layout_marginRight="@dimen/dimension5dp"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/dimension10dp"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerRateCard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension200dp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension0.5dp"
+                android:layout_below="@+id/recyclerRateCard"
+                android:layout_marginBottom="@dimen/dimension10dp"
+                android:layout_marginTop="@dimen/dimension10dp"
+                android:background="@color/colorPrimary" />
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="@dimen/dimension5dp">
+
+                <TextView
+                    android:id="@+id/tvApprox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Price"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Rs 100"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/viewCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension0.5dp"
+            android:layout_below="@+id/relSec"
+            android:layout_marginBottom="@dimen/dimension10dp"
+            android:layout_marginTop="@dimen/dimension10dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tvTitle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewCard"
+            android:layout_marginLeft="@dimen/dimension5dp"
+            android:layout_marginRight="@dimen/dimension5dp"
+            android:padding="@dimen/dimension10dp"
+            android:text="Feedback"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <RelativeLayout
+            android:id="@+id/relThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle3"
+            android:layout_marginLeft="@dimen/dimension5dp"
+            android:layout_marginRight="@dimen/dimension5dp"
+            android:background="@color/colorWhite"
+            android:padding="@dimen/dimension10dp"
+            >
+
+            <EditText
+                android:id="@+id/edComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="start"
+                android:hint="Add feedback here.."
+                android:lines="4"
+                android:textColor="@color/colorPrimary"
+                 />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edComment"
+                android:layout_centerInParent="true"
+                android:isIndicator="false"
+                android:progress="3"
+                android:progressTint="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/btSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBar"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dimension20dp"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/dimension10dp"
+                android:paddingRight="@dimen/dimension10dp"
+                android:layout_marginTop="@dimen/dimension10dp"
+                android:text="Submit" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relForth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewCard"
+            android:layout_marginLeft="@dimen/dimension5dp"
+            android:layout_marginRight="@dimen/dimension5dp"
+            android:padding="@dimen/dimension10dp"
+            android:visibility="gone"
+            >
+
+
+            <Button
+                android:id="@+id/btAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dimension20dp"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/dimension10dp"
+                android:paddingRight="@dimen/dimension10dp"
+                android:text="Accept" />
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="@dimen/dimension20dp"
+                android:background="@color/colorPrimaryDark"
+                android:paddingLeft="@dimen/dimension10dp"
+                android:paddingRight="@dimen/dimension10dp"
+                android:text="Cancel" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
